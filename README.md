@@ -5,7 +5,7 @@
 Es una aplicación de inventario y caja pensada para bodegas, abastos, farmacias, ferreterías y distribuidores pequeños. Funciona en tu celular Android o tu computadora Windows **sin conexión a internet**, sin usuario, sin contraseña y sin nube.
 
 👉 **Sitio web:** https://l7manuel.github.io/cuadrito-site/  
-👉 **Hablar por WhatsApp:** https://wa.me/5804241120138
+👉 **Hablar por WhatsApp:** https://wa.me/584241120138
 
 ---
 
@@ -109,4 +109,4 @@ Estamos iniciando nuestro piloto en **Valencia, estado Carabobo**, y atendemos p
 
 ¿Te gustaría probarla en tu tienda? Escríbenos:
 
-**WhatsApp:** https://wa.me/5804241120138
+**WhatsApp:** https://wa.me/584241120138
