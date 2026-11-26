@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cuadrito — Inventario y caja sin internet</title>
+  <meta name="description" content="Inventario y caja para bodegas, abastos, farmacias y ferreterías. Funciona sin internet; los datos se quedan en tu dispositivo.">
+  <style>
+    :root {
+      --bg: #f7f5ef;
+      --ink: #1e2a24;
+      --muted: #5b6b62;
+      --accent: #1f7a53;
+      --accent-dark: #145c3e;
+      --card: #ffffff;
+      --line: #dce4dd;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      line-height: 1.55;
+    }
+    header {
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255,255,255,.7);
+    }
+    .brand { font-weight: 800; font-size: 1.25rem; letter-spacing: -.02em; }
+    .brand span { color: var(--accent); }
+    a { color: var(--accent-dark); }
+    .container { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+    .hero { padding: 72px 0 40px; }
+    h1 { font-size: clamp(2rem, 5vw, 3.4rem); line-height: 1.1; margin: 0 0 18px; letter-spacing: -.03em; }
+    h2 { margin-top: 56px; font-size: 1.7rem; }
+    .lead { font-size: 1.2rem; color: var(--muted); max-width: 680px; }
+    .question {
+      margin: 28px 0;
+      padding: 18px 22px;
+      border-left: 4px solid var(--accent);
+      background: #eef4ee;
+      font-weight: 650;
+      border-radius: 0 10px 10px 0;
+    }
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      padding: 13px 22px;
+      border-radius: 10px;
+      font-weight: 700;
+    }
+    .btn:hover { background: var(--accent-dark); }
+    .btn.secondary { background: transparent; color: var(--accent-dark); border: 1px solid var(--accent); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; margin-top: 24px; }
+    .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 22px; }
+    .card h3 { margin: 0 0 8px; font-size: 1.1rem; }
+    .card p { margin: 0; color: var(--muted); }
+    .price { font-size: 2rem; font-weight: 800; color: var(--accent-dark); }
+    ul { padding-left: 20px; }
+    .note { color: var(--muted); font-size: .95rem; }
+    footer { margin-top: 72px; padding: 28px 24px 40px; border-top: 1px solid var(--line); color: var(--muted); font-size: .92rem; }
+    footer .container { display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">Cu<span>adrito</span></div>
+    <a class="btn" href="https://wa.me/58XXXXXXXXXX" aria-label="Escribir por WhatsApp">Hablar por WhatsApp</a>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Inventario y caja para tu bodega, sin internet y sin complicaciones.</h1>
+      <p class="lead">Cuadrito responde a una sola pregunta: <strong>¿qué tengo, qué me falta y cuánto vale mi mercancía?</strong></p>
+      <div class="question">Los datos se quedan en tu celular o computadora. No hay login, nube ni sincronización.</div>
+      <p>
+        <a class="btn" href="https://wa.me/58XXXXXXXXXX">Pedir prueba gratis de 30 días</a>
+        <a class="btn secondary" href="#precio">Ver precio</a>
+      </p>
+    </section>
+
+    <section>
+      <h2>Hecho para negocios pequeños</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Bodegas y abastos</h3>
+          <p>Controla existencias, ventas y caja sin depender de la conexión.</p>
+        </div>
+        <div class="card">
+          <h3>Farmacias y ferreterías</h3>
+          <p>Códigos SAP de hasta 18 caracteres, con ceros a la izquierda significativos.</p>
+        </div>
+        <div class="card">
+          <h3>Distribuidores</h3>
+          <p>Conoce el valor de tu mercancía y detecta lo que se está agotando.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Cómo funciona</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>1. Carga tus productos</h3>
+          <p>Los registras a mano o los importas desde Excel. Hasta 500 productos en el paquete Básico.</p>
+        </div>
+        <div class="card">
+          <h3>2. Registra ventas</h3>
+          <p>El stock se mueve solo con cada venta. Nunca editas la existencia a mano.</p>
+        </div>
+        <div class="card">
+          <h3>3. Mira tu caja</h3>
+          <p>Dinero en centavos y cantidades en milésimas, para que nunca se pierda un decimal.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="precio">
+      <h2>Cuadrito Básico</h2>
+      <div class="card">
+        <div class="price">USD 25</div>
+        <p class="note">Pago único por tienda y dispositivo.</p>
+        <ul>
+          <li>Instalación asistida por WhatsApp</li>
+          <li>Carga inicial de hasta 500 productos</li>
+          <li>Capacitación de 30 minutos</li>
+          <li>Actualizaciones menores por 12 meses</li>
+          <li>Respaldos manuales que tú guardas</li>
+        </ul>
+        <p class="note">
+          Promoción de validación: USD 15 si decides dentro de los 7 días después de la prueba.
+          Aceptamos USDT, efectivo, pago móvil y bolívares a la tasa del día.
+        </p>
+        <p><a class="btn" href="https://wa.me/58XXXXXXXXXX">Solicitar piloto gratis</a></p>
+      </div>
+      <p class="note">
+        <strong>Lo que no incluye:</strong> nube, sincronización entre dispositivos, multi-sucursal,
+        roles, facturación, impresión ni integración SAP. Si lo necesitas, lo conversamos aparte.
+      </p>
+    </section>
+
+    <section>
+      <h2>Disponible para</h2>
+      <div class="grid">
+        <div class="card"><h3>Android</h3><p>APK firmado, instalable sin Play Store.</p></div>
+        <div class="card"><h3>Windows</h3><p>Instaladores MSI y NSIS.</p></div>
+        <div class="card"><h3>Sin conexión</h3><p>Funciona en local-first: tu información no sale del equipo.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div>
+        <strong>Cuadrito</strong> — inventario y caja local-first.<br>
+        Nombre de trabajo; marca y dominio en validación.
+      </div>
+      <div>
+        <a href="privacidad.html">Privacidad</a> ·
+        <a href="terminos.html">Términos</a> ·
+        <a href="https://wa.me/58XXXXXXXXXX">Contacto</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
